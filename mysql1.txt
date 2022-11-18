@@ -1,0 +1,45 @@
+MySQL is a widely used relational database management system (RDBMS).
+MySQL is free and open-source.
+MySQL is ideal for both small and large applications
+
+#Key terms
+1.data
+2.database
+3.data model
+4.relational database
+5.non relational database
+6.relational data model
+7.relational database management system
+
+# what is data?
+Data is a collection of informations or raw bits or pieces of informations it is called data.
+example of data :image,vedio,word
+
+#what is database
+database is collection of data that is organized into file.
+
+#whats is datamodel 
+data model is logical structure of a database
+
+#whats is relational data model
+Relational Model (RM) represents the database as a collection of relations. A relation is nothing but a table of values.
+Every row in the table represents a collection of related data values. 
+These rows in the table denote a real-world entity or relationship.
+
+#relational database
+What is relational database with example?
+Image result for relational database
+A relational database includes tables containing rows and columns. For example, 
+a typical business order entry database would include 
+a table that describes a customer with columns for name, address, phone number and so forth.
+
+#Which is a non relational database?
+A non-relational database is a database that does not use the tabular schema of rows and columns found in most traditional database systems. 
+Instead, non-relational databases use a storage model that is optimized for the specific requirements of the type of data being stored.
+
+# RDBMS
+What is the relational database management system?
+The software used to store, manage, query, and retrieve data stored in a relational database is called a 
+relational database management system (RDBMS). 
+The RDBMS provides an interface between users and applications and the database,
+as well as administrative functions for managing data storage, access, and performance.
