@@ -1,0 +1,67 @@
+A DML (data manipulation language) refers to a computer programming language that allows you to add (insert), delete (delete), and alter (update) data in a database. A DML is typically a sublanguage of a larger database language like SQL, with the DML containing some of the language’s operators. A DML (data manipulation language) is a group of computer languages that provide commands for manipulating data in databases.
+
+Table of Contents
+
+What is Data Manipulation Language (DML)?
+INSERT INTO Command
+UPDATE Command
+DELETE Command
+What is Data Manipulation Language (DML)?
+The majority of SQL statements are categorised as DML (Data Manipulation Language), which includes SQL commands that deal with modifying data in a database. It’s the section of the SQL statement that controls who has access to the database and data. DML statements and DCL statements are grouped together. Because the DML command isn’t auto-committed, it won’t be able to save all database changes permanently. There’s a chance they’ll be rolled back.
+
+Here are some different DML commands:
+
+INSERT INTO Command
+This command can be used to insert data into a row of a table. INSERT INTO would insert the values that are mentioned in the ‘Student’ table below.
+
+Syntax:
+INSERT INTO NAME_OF_TABLE (1_column, 2_column, 3_column, …. N_column)
+
+VALUES (1_value, 2_value, 3_value, …. N_value);
+
+Or
+
+INSERT INTO NAME_OF_TABLE
+
+VALUES (1_value, 2_value, 3_value, …. N_value);
+
+Example:
+INSERT INTO Student(Stu_Name, DOB, Phone, Mail)
+
+VALUES(‘Phoebe’, ‘1998-05-26’, 7812865845, ‘user@xyz.com’);
+
+UPDATE Command
+This statement in SQL is used to update the data that is present in an existing table of a database. The UPDATE statement can be used to update single or multiple columns on the basis of our specific needs.
+
+Syntax:
+UPDATE name_of_table SET 1_coumn = 1_value, 2_coumn = 2_value, 3_coumn = 3_value, … , N_coumn = N_value
+
+WHERE condition;
+
+And here,
+
+name_of_table: name of the table
+
+1_column, 2_column, 3_column, …. N_column: name of the first, second, third, …. nth column.
+
+1_value, 2_value, 3_value, …. N_value: the new value for the first, second, third, …. nth column.
+
+condition: the condition used to select those rows for which the column values need to be updated.
+
+Example:
+UPDATE Student SET Phone = 9039462901 WHERE Stu_Name = ’Phoebe’;
+
+The WHERE clause in the preceding query is used to select the rows for which the columns need to be adjusted, and the SET statement has been used to assign new values to a particular column. If the WHERE clause is not used at all, then all of the rows’ columns will be modified. As a result, the WHERE clause is used to pick specific rows from the table.
+
+Thus, the example query would update the phone number of the student with the name ‘Phoebe’.
+
+DELETE Command
+The DELETE statement can be used in SQL to delete various records from a given table. On the basis of the condition that has been set in the WHERE clause, one can delete single or multiple records.
+
+Syntax:
+DELETE FROM name_of_table [WHERE condition];
+
+Example:
+DELETE FROM Student WHERE Stu_Name = ’Phoebe’;
+
+The command given above would delete the record for the student with the name ‘Phoebe’ from the ‘Student’ table. Apart from this, one can also use the LOCK Table statement to explicitly acquire the shared or exclusive table lock on a specified table.
